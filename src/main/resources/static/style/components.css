@@ -1,0 +1,104 @@
+.custom-nav {
+    height: auto;
+}
+
+.custom-nav {
+    width: 130px;
+    padding: 20px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: start;
+}
+
+.custom-nav i {
+    width: 30%;
+    color: white;
+    font-size: 19px;
+}
+
+.custom-nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    height: 100%;
+    text-align: start;
+    justify-content: start;
+    text-decoration: none;
+    color: white;
+    width: 120%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    transition: all 200ms ease-in-out;
+    transition: transform 0.3s ease-out;
+}
+
+.custom-nav button:before {
+    /* Esse seleter CSS seleciona o pseudo-elemento ::before de cada link */
+    content: "";
+    position: absolute;
+    /* posiciona o pseudo-elemento absolutamente em relação ao container pai */
+    width: 100%;
+    /* define a largura em 100% em relação ao conteiner pai */
+    height: 3px;
+    /* define a altura em 3px */
+    bottom: 0;
+    /* coloca o pseudo-elemento na parte inferior começando com 0*/
+    left: 0;
+    /* coloca o pseudo-elemento na parte esquerda começando com 0*/
+    background-color: white;
+    visibility: hidden;
+    /* inicialmente, o pseudo-elemento é oculto*/
+    -webkit-transform: scaleX(0);
+    /*Define a transformação na escala X como 0, o que significa que o pseudo-elemento está inicialmente invisível (sem largura). */
+    transform: scaleX(0);
+    /* adiciona uma transição suave de 0,3 segundos para todas as propriedades, usando a função de temporização ease-in-out */
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.custom-nav button:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.custom-nav button:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #9932CC;
+    transform: scale(1.1);
+}
+
+.transparentbar {
+    margin-top: 15px;
+    margin-bottom: -28px;
+    margin-left: -9px;
+    width: 155px;
+    border-top: 1px solid #9932CC;
+    padding: 20px;
+}
+
+.transparentbar-2 {
+    margin-top: -55px;
+    margin-bottom: -27px;
+    margin-left: -9px;
+    width: 155px;
+    border-top: 1px solid #9932CC;
+    padding: 20px;
+}
+
+.nav-2 {
+    margin-top: -20px;
+}
+
+@media only screen and (max-width: 568px) {
+
+    /* For mobile phones: */
+    .custom-nav a:active {
+        font-weight: bold;
+        color: white;
+        background-color: #9932CC;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 25px;
+    font-size: 10px;
+    align-items: center;
+    margin: auto;
+}
+
+.grid-container section.card {
+    position: relative;
+    display: flex;
+    background: linear-gradient(to right, #48116d, #9b2ddb);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+    padding: 1rem 1.5em 3rem;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px -30px #4B0082;
+}
+
+.grid-container section.card h1 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+.grid-container section.card button {
+    position: absolute;
+    bottom: 15px;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #301046, #6e2c97);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.grid-container img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
