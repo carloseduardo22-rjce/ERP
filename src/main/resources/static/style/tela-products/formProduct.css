@@ -1,0 +1,9 @@
+.content {
+    flex: 1;
+    background-color: black;
+}
+
+.content li {
+    color: white;
+    list-style-type: none;
+}

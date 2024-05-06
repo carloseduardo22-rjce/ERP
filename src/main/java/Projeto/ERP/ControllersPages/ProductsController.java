@@ -11,4 +11,9 @@ public class ProductsController {
         return "tela-products/tela-products";
     }
 
+    @GetMapping(value = "formProduct")
+    public String pageFormProducts() {
+        return "tela-products/formProduct";
+    }
+
 }
