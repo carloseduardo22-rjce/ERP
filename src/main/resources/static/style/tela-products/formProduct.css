@@ -3,7 +3,43 @@
     background-color: black;
 }
 
-.content li {
-    color: white;
+.container-form {
+    margin-left: 10px;
+}
+
+.container-form form {
+    width: 600px;
+}
+
+.container-form ul.list {
     list-style-type: none;
+    padding: 0;
+}
+
+.container-form ul.list li {
+    display: inline-block;
+    /* Torna os itens da lista elementos em linha */
+    vertical-align: top;
+    /* Alinha os itens verticalmente ao topo */
+    margin-right: 20px;
+    /* Adiciona um espaçamento entre os itens */
+}
+
+.container-form ul.list li:last-child {
+    margin-right: 0;
+    /* Remove o espaçamento do último item */
+}
+
+.container-form ul.list li label {
+    display: block;
+    color: white;
+    /* Faz com que as etiquetas ocupem toda a largura */
+}
+
+.container-form ul.list li input,
+.container-form ul.list li textarea {
+    width: 200px;
+    /* Define a largura dos campos de entrada */
+    margin-bottom: 10px;
+    /* Adiciona um espaçamento entre os campos */
 }
