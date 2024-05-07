@@ -1,14 +1,22 @@
 .content {
+    display: flex;
     flex: 1;
     background-color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-form {
-    margin-left: 10px;
+    display: flex;
+    width: 470px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .container-form form {
-    width: 600px;
+    margin-left: 12px;
+    width: 470px;
 }
 
 .container-form ul.list {
@@ -23,6 +31,7 @@
     /* Alinha os itens verticalmente ao topo */
     margin-right: 20px;
     /* Adiciona um espaçamento entre os itens */
+    margin-top: 20px;
 }
 
 .container-form ul.list li:last-child {
@@ -32,14 +41,33 @@
 
 .container-form ul.list li label {
     display: block;
-    color: white;
+    color: black;
     /* Faz com que as etiquetas ocupem toda a largura */
 }
 
 .container-form ul.list li input,
 .container-form ul.list li textarea {
     width: 200px;
-    /* Define a largura dos campos de entrada */
     margin-bottom: 10px;
-    /* Adiciona um espaçamento entre os campos */
+    background-color: none;
+    border: 1px solid rgb(104, 55, 104);
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    /*background-color: linear-gradient(to right, #301046, #6e2c97);*/
+}
+
+.container-form ul.list li textarea {
+    height: 100px;
+}
+
+.button-form {
+    background-color: rgb(105, 48, 105);
+    border: none;
+    border: 1px solid rgb(105, 48, 105);
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(to right, #301046, #6e2c97);
+    cursor: pointer;
+    padding: 10px;
 }
