@@ -1,6 +1,3 @@
-// quando botão focar clicado, os dados serão enviados pro back
-// printo um window.alert avisando que o produto foi adicionado.
-// reseto o formulário
 const form = document.querySelector('.content form');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -18,4 +15,19 @@ form.addEventListener('submit', async (e) => {
         window.alert(`Error: ${error}`);
     }
 
+});
+
+const buttonProduct = document.querySelector('.buttonProduct');
+buttonProduct.addEventListener('click', () => {
+    const fetchPromise = fetch(
+        "http://localhost:8080/products"
+    );
+
+    fetchPromise
+        .then((response) => {
+            window.location.href = response.url;
+        })
+        .catch((error) => {
+            console.log(`Error: ${error}`);
+        });
 });
