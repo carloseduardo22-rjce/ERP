@@ -16,7 +16,7 @@
         <table>
             <thead>
                 <tr>
-                    <th>Código do produto</th>
+                    <th>Sku</th>
                     <th>Nome</th>
                     <th>Descrição</th>
                     <th>Preço</th>
@@ -26,7 +26,7 @@
             </thead>
             <tbody>
                 <tr th:each="product: ${listOfProducts}">
-                    <td th:text="${product.cod_product}"></td>
+                    <td th:text="${product.sku}"></td>
                     <td th:text="${product.nameProduct}"></td>
                     <td th:text="${product.description}"></td>
                     <td th:text="${product.unityPrice}"></td>

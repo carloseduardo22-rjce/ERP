@@ -33,4 +33,11 @@ public class ProductsController {
         return "views/products/listOfProducts";
     }
 
+    @GetMapping(value = "removeProducts")
+    public String removeProducts(Model model) {
+        List<Product> list = productService.findAll();
+        model.addAttribute("listOfProducts", list);
+        return "views/products/removeProducts";
+    }
+
 }

@@ -18,6 +18,7 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID cod_product;
 
+	private String sku;
 	private String nameProduct;
 	private String description;
 	private Double unityPrice;
